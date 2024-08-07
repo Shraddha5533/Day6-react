@@ -1,0 +1,54 @@
+/* Container for the app */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Button styles */
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Specific styles for Login and Logout buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+button.login {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+button.logout {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+/* AuthStatus component styles */
+.auth-status {
+  margin: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Light theme styling */
+.light .auth-status {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Dark theme styling */
+.dark .auth-status {
+  background-color: #333;
+  color: #f0f0f0;
+}
